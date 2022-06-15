@@ -1,0 +1,36 @@
+import "./styles.css";
+
+export default function App() {
+  const mylist = [
+    {
+      firstname: "siva",
+      secondname: "kumar",
+      age: 20
+    },
+    {
+      firstname: "valluru",
+      secondname: "prasad",
+      age: 21
+    },
+    {
+      firstname: "avasani",
+      secondname: "sivayya",
+      age: 22
+    }
+  ];
+
+  return (
+    <div className="App">
+      <ul className="ul">
+        {mylist.map((mylist) => {
+          return (
+            <li>
+              {mylist.firstname},{mylist.secondname}({mylist.age})
+            </li>
+          );
+        })}
+      </ul>
+      ;
+    </div>
+  );
+}

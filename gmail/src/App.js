@@ -7,7 +7,6 @@ function App() {
   const [data,setData]=useState({
     username:"",
     password:"",
-
   })
   const{username,password}=data;
   const handleChange=(e)=>{
